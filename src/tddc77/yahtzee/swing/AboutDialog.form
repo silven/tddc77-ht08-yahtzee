@@ -64,7 +64,7 @@
     <Component class="javax.swing.JLabel" name="htmlInfoLabel">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt; This application was produced during the course TDDC77 at Link&#xf6;ping University, Sweden. for more information, vist the course website at &lt;a href=&quot;http://www.ida.liu.se/~TDDC77&quot;&gt;http://www.ida.liu.se/~TDDC77&lt;/a&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; This application was produced during the course TDDC77 at Link&#xf6;ping University, Sweden. For more information, vist the course website at &lt;a href=&quot;http://www.ida.liu.se/~TDDC77&quot;&gt;http://www.ida.liu.se/~TDDC77&lt;/a&gt;"/>
         <Property name="verticalAlignment" type="int" value="1"/>
       </Properties>
     </Component>
