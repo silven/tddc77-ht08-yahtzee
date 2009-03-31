@@ -36,7 +36,7 @@ public class AboutDialog extends javax.swing.JDialog
         setResizable(false);
 
         htmlInfoLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        htmlInfoLabel.setText("<html> This application was produced during the course TDDC77 at Linköping University, Sweden. for more information, vist the course website at <a href=\"http://www.ida.liu.se/~TDDC77\">http://www.ida.liu.se/~TDDC77</a>");
+        htmlInfoLabel.setText("<html> This application was produced during the course TDDC77 at Linköping University, Sweden. For more information, vist the course website at <a href=\"http://www.ida.liu.se/~TDDC77\">http://www.ida.liu.se/~TDDC77</a>");
         htmlInfoLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         johnLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tddc77/yahtzee/swing/avatar_john.png"))); // NOI18N
