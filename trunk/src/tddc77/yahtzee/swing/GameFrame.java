@@ -41,7 +41,6 @@ public class GameFrame extends javax.swing.JFrame implements
     private void initComponents() {
 
         playersTabbedPane = new javax.swing.JTabbedPane();
-        playerPanel1 = new tddc77.yahtzee.swing.PlayerPanel();
         dicePanel = new javax.swing.JPanel();
         playerPanel = new javax.swing.JPanel();
         possibleScoreLabel = new javax.swing.JLabel();
@@ -66,13 +65,9 @@ public class GameFrame extends javax.swing.JFrame implements
         setTitle("Yahtzee");
         setResizable(false);
 
-        playersTabbedPane.addTab("Example Player", playerPanel1);
-
         dicePanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        dicePanel.setEnabled(false);
 
         playerPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        playerPanel.setEnabled(false);
 
         possibleScoreLabel.setText("Scores:");
 
@@ -110,11 +105,11 @@ public class GameFrame extends javax.swing.JFrame implements
                     .addGroup(playerPanelLayout.createSequentialGroup()
                         .addComponent(rollsLeftTitleLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rollsLeftLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE))
+                        .addComponent(rollsLeftLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE))
                     .addGroup(playerPanelLayout.createSequentialGroup()
                         .addComponent(currentPlayerTitleLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(currentPlayerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)))
+                        .addComponent(currentPlayerLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -209,7 +204,7 @@ public class GameFrame extends javax.swing.JFrame implements
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(playersTabbedPane, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                    .addComponent(playersTabbedPane, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 545, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(playerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -222,7 +217,7 @@ public class GameFrame extends javax.swing.JFrame implements
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(playersTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 272, Short.MAX_VALUE)
+                .addComponent(playersTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 272, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
@@ -342,7 +337,6 @@ private void highScoreMenuItemActionPerformed(java.awt.event.ActionEvent evt) {/
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newGameMenuItem;
     private javax.swing.JPanel playerPanel;
-    private tddc77.yahtzee.swing.PlayerPanel playerPanel1;
     private javax.swing.JTabbedPane playersTabbedPane;
     private javax.swing.JComboBox possibleScoreComboBox;
     private javax.swing.JLabel possibleScoreLabel;

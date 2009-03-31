@@ -140,17 +140,6 @@
       </AccessibilityProperties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="tddc77.yahtzee.swing.PlayerPanel" name="playerPanel1">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Example Player">
-                <Property name="tabTitle" type="java.lang.String" value="Example Player"/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-        </Component>
-      </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="dicePanel">
       <Properties>
@@ -159,7 +148,6 @@
             <EtchetBorder/>
           </Border>
         </Property>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
@@ -171,7 +159,6 @@
             <EtchetBorder/>
           </Border>
         </Property>
-        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
 
       <Layout>
