@@ -123,7 +123,6 @@ public class PlayerPanel extends javax.swing.JPanel implements
         chanseTextField = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         rightPanel = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
         yatzeeTextField = new javax.swing.JTextField();
         onesLabel1 = new javax.swing.JLabel();
         pairTextField = new javax.swing.JTextField();
@@ -141,6 +140,7 @@ public class PlayerPanel extends javax.swing.JPanel implements
         houseTextField = new javax.swing.JTextField();
         totalScoreTextField = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -185,7 +185,7 @@ public class PlayerPanel extends javax.swing.JPanel implements
             .addGroup(leftPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(leftForBonusLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                    .addComponent(leftForBonusLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
                     .addGroup(leftPanelLayout.createSequentialGroup()
                         .addComponent(onesLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -267,8 +267,6 @@ public class PlayerPanel extends javax.swing.JPanel implements
 
         add(leftPanel);
 
-        jLabel16.setText("Yahtzee:");
-
         yatzeeTextField.setEditable(false);
 
         onesLabel1.setText("Pair:");
@@ -301,8 +299,10 @@ public class PlayerPanel extends javax.swing.JPanel implements
 
         totalScoreTextField.setEditable(false);
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel18.setFont(jLabel18.getFont().deriveFont(jLabel18.getFont().getStyle() | java.awt.Font.BOLD));
         jLabel18.setText("Total score:");
+
+        jLabel1.setText("Yahtzee:");
 
         javax.swing.GroupLayout rightPanelLayout = new javax.swing.GroupLayout(rightPanel);
         rightPanel.setLayout(rightPanelLayout);
@@ -311,10 +311,10 @@ public class PlayerPanel extends javax.swing.JPanel implements
             .addGroup(rightPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(rightPanelLayout.createSequentialGroup()
-                            .addComponent(jLabel16)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(yatzeeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(rightPanelLayout.createSequentialGroup()
                             .addComponent(onesLabel1)
@@ -343,7 +343,7 @@ public class PlayerPanel extends javax.swing.JPanel implements
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        rightPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel10, jLabel11, jLabel12, jLabel14, jLabel16, jLabel18, jLabel8, jLabel9, onesLabel1});
+        rightPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel1, jLabel10, jLabel11, jLabel12, jLabel14, jLabel18, jLabel8, jLabel9, onesLabel1});
 
         rightPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {fourOfAKindTextField, houseTextField, largeStraightTextField, pairTextField, smallStraightTextField, threeOfAKindaTextField, totalScoreTextField, twoPairsTextField, yatzeeTextField});
 
@@ -381,17 +381,15 @@ public class PlayerPanel extends javax.swing.JPanel implements
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(yatzeeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16))
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(totalScoreTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel18))
+                    .addComponent(jLabel18)
+                    .addComponent(totalScoreTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        rightPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {fourOfAKindTextField, houseTextField, jLabel10, jLabel11, jLabel12, jLabel8, jLabel9, largeStraightTextField, onesLabel1, pairTextField, smallStraightTextField, threeOfAKindaTextField, totalScoreTextField, twoPairsTextField, yatzeeTextField});
-
-        rightPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel16, jLabel18});
+        rightPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {fourOfAKindTextField, houseTextField, jLabel1, jLabel10, jLabel11, jLabel12, jLabel14, jLabel18, jLabel8, jLabel9, largeStraightTextField, onesLabel1, pairTextField, smallStraightTextField, threeOfAKindaTextField, totalScoreTextField, twoPairsTextField, yatzeeTextField});
 
         add(rightPanel);
     }// </editor-fold>//GEN-END:initComponents
@@ -402,12 +400,12 @@ public class PlayerPanel extends javax.swing.JPanel implements
     private javax.swing.JTextField fourOfAKindTextField;
     private javax.swing.JTextField foursTextField;
     private javax.swing.JTextField houseTextField;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel3;
