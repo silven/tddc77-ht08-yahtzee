@@ -405,6 +405,7 @@ private void highScoreMenuItemActionPerformed(java.awt.event.ActionEvent evt) {/
             {
                 Player p = (Player) obj;
                 playersTabbedPane.add(new PlayerPanel(p));
+                pack();
             }
         }
         //The list of possible scores was updated, refresh the combobox

@@ -105,8 +105,8 @@
                       <Component id="playerPanel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="rollButton" pref="232" max="32767" attributes="1"/>
-                          <Component id="dicePanel" alignment="0" pref="232" max="32767" attributes="1"/>
+                          <Component id="rollButton" pref="234" max="32767" attributes="1"/>
+                          <Component id="dicePanel" alignment="0" pref="234" max="32767" attributes="1"/>
                       </Group>
                   </Group>
               </Group>
@@ -170,7 +170,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="possibleScoreLabel" linkSize="3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                          <Component id="possibleScoreComboBox" pref="146" max="32767" attributes="0"/>
+                          <Component id="possibleScoreComboBox" pref="166" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="saveScoreButton" min="-2" max="-2" attributes="1"/>
                       </Group>
